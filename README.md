@@ -10,7 +10,9 @@ Game of Thrones ep 9<br>
 Game of Thrones ep 5<br>
 Game of Thrones ep 6<br>
 Game of Thrones ep 3<br>
-Game of Thrones ep 4<br><br>
+Game of Thrones ep 4<br>
+
+<h2> Executable JAR file in releases</h3><br>
 <h3>For Devs</h3>
 If the inbuilt algorithm is not enough for your use you edit it. Algo is written in:<br>
 src->renamer->Logic.java->renamelogic(String)
