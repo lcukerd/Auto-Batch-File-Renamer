@@ -221,11 +221,7 @@ public class buildGUI extends JFrame {
 		    		result.setText("No file selected!");
 	    		else
 	    		{
-	    			if (beforeT.getText().equals(""))
-			    		result.setText("before Text not written");
-	    			else
-	    			{
-	    				logic = new Logic(beforeT.getText(),prependT.getText(),add);
+	    			logic = new Logic(beforeT.getText(),prependT.getText(),add);
 	    				result.setText("");
 				    	for (File temp:files)
 				    	{
@@ -233,7 +229,6 @@ public class buildGUI extends JFrame {
 				    			String newname = logic.renamefiles(temp,false);
 				    			result.append(oldname + "  :  " + newname + "\r\n"); 
 				    	}
-	    			}
 	    		}
 	    	}
 	    	catch(Exception e)
@@ -255,14 +250,7 @@ public class buildGUI extends JFrame {
 		    		result.setText("No file selected!");
 	    		else
 	    		{
-	    			if (beforeT.getText() == null)
-			    		result.setText("before Text not written");
-	    			else
-	    			{
-	    				if (prependT.getText() == null)
-	    					logic = new Logic(beforeT.getText(),"",add);
-	    				else
-	    					logic = new Logic(beforeT.getText(),prependT.getText(),add);
+	    			logic = new Logic(beforeT.getText(),prependT.getText(),add);
 	    				result.setText("");
 				    	for (File temp:files)
 				    	{
@@ -270,7 +258,6 @@ public class buildGUI extends JFrame {
 				    			String newname = logic.renamefiles(temp,true);
 				    			result.append(oldname + "  :  " + newname + "\r\n"); 
 				    	}
-	    			}
 	    		}
 	    	}
 	    	catch(Exception e)
