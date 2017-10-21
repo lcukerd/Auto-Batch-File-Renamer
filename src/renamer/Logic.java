@@ -57,7 +57,13 @@ public class Logic {
     		temp = oldname.indexOf('.',extensionIndex+1);
     	}
     	extension = oldname.substring(extensionIndex);
-    	epnumS = String.valueOf(Integer.parseInt(epnumS)+add);
+    	try{
+    		epnumS = String.valueOf(Integer.parseInt(epnumS)+add);
+    	}
+    	catch (NumberFormatException e)
+    	{
+    		return "#failed@@";
+    	}
     	System.out.println(prepend + epnumS+extension);
     	return prepend + epnumS+extension;
     }
